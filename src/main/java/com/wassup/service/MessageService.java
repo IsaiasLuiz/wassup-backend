@@ -22,6 +22,6 @@ public class MessageService {
     }
 
     public List<Message> findAllMessagesBySenderAndReceiver(final String sender, final String receiver) {
-        return messageRepository.findAllBySenderAndReceiverOrderBySendDate(sender, receiver);
+        return messageRepository.findMessages(sender, receiver);
     }
 }

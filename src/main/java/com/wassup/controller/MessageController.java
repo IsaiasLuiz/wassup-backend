@@ -1,6 +1,7 @@
 package com.wassup.controller;
 
 import com.wassup.domain.model.Message;
+import com.wassup.domain.request.SearchMessage;
 import com.wassup.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +21,8 @@ public class MessageController {
     }
 
     @GetMapping
-    public List<Message> findAll(@RequestBody final String sender, @RequestBody final String receiver) {
-        return messageService.findAllMessagesBySenderAndReceiver(sender, receiver);
+    public List<Message> findAll(@RequestBody final SearchMessage searchMessage) {
+        return messageService.findAllMessagesBySenderAndReceiver(searchMessage.getSender(), searchMessage.getReceiver());
     }
 
 }

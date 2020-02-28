@@ -2,7 +2,6 @@ package com.wassup.controller;
 
 import com.wassup.domain.model.Contact;
 import com.wassup.domain.model.User;
-import com.wassup.domain.model.request.ContactRequest;
 import com.wassup.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

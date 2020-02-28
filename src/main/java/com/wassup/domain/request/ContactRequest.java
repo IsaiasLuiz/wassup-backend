@@ -1,4 +1,4 @@
-package com.wassup.domain.model.request;
+package com.wassup.domain.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
